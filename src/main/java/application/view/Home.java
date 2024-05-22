@@ -100,7 +100,7 @@ public class Home extends JFrame{
                 FlatAnimatedLafChange.hideSnapshotWithAnimation();
             }
             else{
-                Notifications.getInstance().show(Notifications.Type.INFO, Notifications.Location.TOP_CENTER, "Username or Password is incorrect");
+                Notifications.getInstance().show(Notifications.Type.ERROR, Notifications.Location.TOP_CENTER, "Username or Password is incorrect");
             }
         }
     }

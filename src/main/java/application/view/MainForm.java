@@ -15,14 +15,14 @@ import javax.swing.JButton;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-//import raven.application.Application;
 import application.view.other.FormDashboard;
 import application.view.other.FormInbox;
 import application.view.other.FormRead;
 import application.menu.Menu;
 import application.menu.MenuAction;
 import application.view.other.DefaultForm;
-import application.view.other.InputForm;
+import application.view.other.NewEmployeeInputForm;
+import application.view.other.NewMemberInputForm;
 import com.formdev.flatlaf.extras.FlatAnimatedLafChange;
 
 /**
@@ -79,9 +79,9 @@ public class MainForm extends JLayeredPane {
                 showForm(new FormDashboard());
             } else if (index > 0 && index < 4) {
                 if (subIndex == 1) {
-                    showForm(new InputForm());
+                    new NewMemberInputForm();
                 } else if (subIndex == 2) {
-                    showForm(new FormRead());
+                    new NewEmployeeInputForm();
                 } else if (subIndex == 3){
                     showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
                 } else {
