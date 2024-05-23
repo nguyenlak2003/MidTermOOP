@@ -60,6 +60,11 @@
             <artifactId>flatlaf-intellij-themes</artifactId>
             <version>3.4.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>swing-glasspane-popup</artifactId>
+            <version>1.5.0</version>
+        </dependency>
     </dependencies>
     
     <properties>

@@ -21,8 +21,10 @@ import application.view.other.FormInbox;
 import application.view.other.FormRead;
 import application.menu.Menu;
 import application.menu.MenuAction;
-import application.view.other.DefaultForm;
+import application.view.other.CoachesForm;
+import application.view.other.EmpoyeesForm;
 import application.view.other.InputForm;
+import application.view.other.MemberForm;
 import com.formdev.flatlaf.extras.FlatAnimatedLafChange;
 
 /**
@@ -73,21 +75,18 @@ public class MainForm extends JLayeredPane {
 
     private void initMenuEvent() {
         menu.addMenuEvent((int index, int subIndex, MenuAction action) -> {
-            showForm(new DefaultForm("Form : " + index + " " + subIndex));
+           // showForm(new EmpoyeesForm("Form : " + index + " " + subIndex));
+            
             System.out.println(index + " " + subIndex);
-            if (index == 0) {
+            if (index == 0 ) {
                 showForm(new FormDashboard());
-            } else if (index > 0 && index < 4) {
-                if (subIndex == 1) {
-                    showForm(new InputForm());
-                } else if (subIndex == 2) {
-                    showForm(new FormRead());
-                } else if (subIndex == 3){
-                    showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
-                } else {
-                    action.cancel();
-                }
-            } else if (index == 4) {
+            } else if (index == 1) {
+                showForm(new MemberForm()); 
+            }else if (index == 2){
+                showForm(new EmpoyeesForm()); 
+            }else if (index == 3){
+                showForm(new CoachesForm()); 
+            
                 
             } else if(index == 5){
                 Home.logout();

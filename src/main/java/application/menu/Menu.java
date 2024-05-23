@@ -29,9 +29,9 @@ public class Menu extends JPanel {
         {"~MAIN~"},
         {"Home"},
         {"~OPTIONS~"},
-        {"Members", "Show", "Add", "Find"},
-        {"Employees", "Show", "Add", "Find"},
-        {"Coaches", "Show", "Add", "Find"},
+        {"Members"},
+        {"Employees"},
+        {"Coaches"},
         {"Calendar"},
         {"~OTHER~"},
         {"Logout"}

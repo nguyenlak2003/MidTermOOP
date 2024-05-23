@@ -13,6 +13,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import raven.popup.GlassPanePopup;
 import raven.toast.Notifications;
 /**
  *
@@ -21,6 +22,8 @@ import raven.toast.Notifications;
 public class Home extends JFrame{
 
     public Home() {
+        //GlassPanePopup.install(home);
+        
         initComponents();
         setSize(new Dimension(1366, 768));
         setLocationRelativeTo(null);
@@ -36,7 +39,7 @@ public class Home extends JFrame{
     
     private void initComponents() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        //setUndecorated(true);
 
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
