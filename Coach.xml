@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<coaches>
+    <coach>
+        <address>Dien Lam</address>
+        <dob>19/09/2008</dob>
+        <gender>Nữ</gender>
+        <name>Hao</name>
+        <phoneNumber>0989804411</phoneNumber>
+        <salary>8000000</salary>
+        <rentMoney>1000000</rentMoney>
+        <maCoach>5</maCoach>
+    </coach>
+</coaches>

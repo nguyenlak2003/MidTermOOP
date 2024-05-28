@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Employees>
+    <employee>
+        <address>19/09/2008</address>
+        <dob>19/08/2009</dob>
+        <gender>Nam</gender>
+        <name>Lê Văn</name>
+        <phoneNumber>0989900</phoneNumber>
+        <maNV>1</maNV>
+        <salary>890000</salary>
+        <type>Dọn phòng</type>
+    </employee>
+</Employees>

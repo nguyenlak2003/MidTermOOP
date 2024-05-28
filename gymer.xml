@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gymermembers>
+    <gymerMember>
+        <address>fdfdf</address>
+        <dob>dfdfd</dob>
+        <gender>Nam</gender>
+        <name>ffdfkjn</name>
+        <phoneNumber>dfdf</phoneNumber>
+        <id>9</id>
+        <startDay>dfhudhfuk</startDay>
+        <ticket>Vé tháng</ticket>
+        <time>90</time>
+        <price>0</price>
+        <coach>Lê Hào</coach>
+    </gymerMember>
+    <gymerMember>
+        <address>Dien Lam</address>
+        <dob>19/09/2001</dob>
+        <gender>Nam</gender>
+        <name>Le Hoang Lam</name>
+        <phoneNumber>098989990</phoneNumber>
+        <id>19</id>
+        <startDay>19/09/2030</startDay>
+        <ticket>Vé tháng</ticket>
+        <time>4</time>
+        <price>4880000</price>
+        <coach>Hao</coach>
+    </gymerMember>
+</gymermembers>

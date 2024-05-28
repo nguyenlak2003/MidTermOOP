@@ -1,5 +1,17 @@
 package application.view;
 
+import application.controller.Form1Controller;
+import application.controller.Form2Controller;
+import application.controller.Form3Controller;
+import application.controller.Form4Controller;
+import application.controller.Form5Controller;
+import application.controller.Form6Controller;
+import application.form.Form1;
+import application.form.Form2;
+import application.form.Form3;
+import application.form.Form4;
+import application.form.Form5;
+import application.form.Form6;
 import com.formdev.flatlaf.FlatClientProperties;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import com.formdev.flatlaf.util.UIScale;
@@ -77,11 +89,49 @@ public class MainForm extends JLayeredPane {
             System.out.println(index + " " + subIndex);
             if (index == 0) {
                 showForm(new FormDashboard());
-            } else if (index > 0 && index < 4) {
+            } else if (index == 1) {
                 if (subIndex == 1) {
-                    showForm(new InputForm());
+                    Form1 form1 = new Form1();
+                    Form1Controller controller = new Form1Controller(form1);
+                    controller.showForm1();
+                    showForm(form1);
                 } else if (subIndex == 2) {
-                    showForm(new FormRead());
+                    Form2 form2 = new Form2();
+                    Form2Controller controller = new Form2Controller(form2);
+                    controller.showForm2();
+                    showForm(form2);
+                } else if (subIndex == 3){
+                    showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
+                } else {
+                    action.cancel();
+                }
+            }else if (index == 2) {
+                if (subIndex == 1) {
+                    Form3 form3 = new Form3();
+                    Form3Controller controller = new Form3Controller(form3);
+                    controller.showForm3();
+                    showForm(form3);
+                } else if (subIndex == 2) {
+                    Form4 form4 = new Form4();
+                    Form4Controller controller = new Form4Controller(form4);
+                    controller.showForm4();
+                    showForm(form4);
+                } else if (subIndex == 3){
+                    showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
+                } else {
+                    action.cancel();
+                }
+            }else if (index == 3) {
+                if (subIndex == 1) {
+                    Form5 form5 = new Form5();
+                    Form5Controller controller = new Form5Controller(form5);
+                    controller.showForm5();
+                    showForm(form5);
+                } else if (subIndex == 2) {
+                    Form6 form6 = new Form6();
+                    Form6Controller controller = new Form6Controller(form6);
+                    controller.showForm6();
+                    showForm(form6);
                 } else if (subIndex == 3){
                     showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
                 } else {
