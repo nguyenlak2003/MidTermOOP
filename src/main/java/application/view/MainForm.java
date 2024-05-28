@@ -107,15 +107,16 @@ public class MainForm extends JLayeredPane {
                 }
             }else if (index == 2) {
                 if (subIndex == 1) {
-                    Form3 form3 = new Form3();
-                    Form3Controller controller = new Form3Controller(form3);
-                    controller.showForm3();
-                    showForm(form3);
+                    Form5 form5 = new Form5();
+                    Form5Controller controller = new Form5Controller(form5);
+                    controller.showForm5();
+                    showForm(form5);
+                    
                 } else if (subIndex == 2) {
-                    Form4 form4 = new Form4();
-                    Form4Controller controller = new Form4Controller(form4);
-                    controller.showForm4();
-                    showForm(form4);
+                  Form6 form6 = new Form6();
+                    Form6Controller controller = new Form6Controller(form6);
+                    controller.showForm6();
+                    showForm(form6);
                 } else if (subIndex == 3){
                     showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
                 } else {
@@ -123,15 +124,16 @@ public class MainForm extends JLayeredPane {
                 }
             }else if (index == 3) {
                 if (subIndex == 1) {
-                    Form5 form5 = new Form5();
-                    Form5Controller controller = new Form5Controller(form5);
-                    controller.showForm5();
-                    showForm(form5);
+                    Form3 form3 = new Form3();
+                    Form3Controller controller = new Form3Controller(form3);
+                    controller.showForm3();
+                    showForm(form3);
                 } else if (subIndex == 2) {
-                    Form6 form6 = new Form6();
-                    Form6Controller controller = new Form6Controller(form6);
-                    controller.showForm6();
-                    showForm(form6);
+                      Form4 form4 = new Form4();
+                    Form4Controller controller = new Form4Controller(form4);
+                    controller.showForm4();
+                    showForm(form4);
+                    
                 } else if (subIndex == 3){
                     showForm(new DefaultForm("Form : " + index + " " + subIndex + " Lăk"));
                 } else {
